@@ -36,8 +36,7 @@ const heavyThunderList = [
 const updateTime = setInterval(() => {
   const currTime = new Date();
   time.innerHTML =
-    currTime.toLocaleTimeString().slice(0, 5) +
-    currTime.toLocaleTimeString().slice(8, 11);
+    `${currTime.toLocaleTimeString().slice(0, 4)} ${currTime.toLocaleTimeString().slice(8, 11)}`
 }, 1000);
 
 async function getWeatherData() {
